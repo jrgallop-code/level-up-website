@@ -3,170 +3,242 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#08090b">
-  <meta name="description" content="Level Up is a hypertrophy training app for building programs, logging workouts, progressing lifts, and understanding muscle volume and recovery.">
+  <meta name="theme-color" content="#070707">
+  <meta name="description" content="Level Up is a hypertrophy training app for building programs, logging workouts, progressing lifts, and understanding muscle volume, recovery, weight trends, and nutrition targets.">
   <meta property="og:title" content="Level Up — Hypertrophy Training">
-  <meta property="og:description" content="Build your plan. Log every session. Progress with proof.">
+  <meta property="og:description" content="Build the plan. Log the work. Make every session count.">
   <meta property="og:type" content="website">
   <title>Level Up — Hypertrophy Training</title>
+  <link rel="preconnect" href="https://images.pexels.com">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="site-shell">
-    <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="Level Up home">
-        <span class="brand-mark" aria-hidden="true"><i></i><i></i></span>
-        <span class="brand-copy"><strong>LEVEL UP</strong><small>HYPERTROPHY TRAINING</small></span>
-      </a>
-      <button class="menu-button" type="button" data-menu-button aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav id="site-nav" class="site-nav" data-nav>
-        <a href="#features">Features</a>
-        <a href="#how-it-works">How it works</a>
-        <a href="#beta">Beta</a>
-        <a href="#faq">FAQ</a>
-        <a class="nav-cta" href="https://jrgallop-code.github.io/forge-fitness/">Open app</a>
-      </nav>
-    </header>
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="Level Up home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i></span>
+      <span class="brand-copy"><strong>LEVEL UP</strong><small>HYPERTROPHY TRAINING</small></span>
+    </a>
+    <button class="menu-button" type="button" data-menu-button aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" data-nav>
+      <a href="#features">Features</a>
+      <a href="#system">How it works</a>
+      <a href="#beta">Free beta</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-cta" href="https://jrgallop-code.github.io/forge-fitness/">Open Level Up</a>
+    </nav>
+  </header>
 
-    <main id="top">
-      <section class="hero section-wrap">
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <div class="eyebrow"><span></span> BUILT FOR HYPERTROPHY</div>
-            <h1>Train with purpose.<br><em>Progress with proof.</em></h1>
-            <p class="hero-lede">Level Up brings program building, workout logging, progressive overload, muscle volume, recovery, and nutrition targets into one focused training experience.</p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="https://jrgallop-code.github.io/forge-fitness/">Try Level Up free <span>↗</span></a>
-              <a class="button button-ghost" href="#features">See what it does</a>
-            </div>
-            <div class="hero-proof">
-              <div><strong>Free beta</strong><span>No credit card</span></div>
-              <div><strong>Phone-first</strong><span>Install as a PWA</span></div>
-              <div><strong>Your training</strong><span>Built around progression</span></div>
-            </div>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-photo" role="img" aria-label="Bodybuilder training in a gym"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <span class="kicker">HYPERTROPHY TRAINING. BUILT TO PROGRESS.</span>
+          <h1>Build muscle<br><em>with a plan.</em></h1>
+          <p>Level Up turns your training into a system: build the program, log every set, know when to progress, and see where your work is actually going.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://jrgallop-code.github.io/forge-fitness/">Try the free beta <span>↗</span></a>
+            <a class="text-link" href="#features">Explore the app <span>↓</span></a>
           </div>
-
-          <div class="hero-visual" aria-label="Preview of the Level Up training dashboard">
-            <div class="phone-glow"></div>
-            <div class="phone-frame">
-              <div class="phone-top"><span>9:41</span><b></b><span>●●●</span></div>
-              <div class="app-head">
-                <span class="mini-kicker">MONDAY, AUGUST 17</span>
-                <h2>DASHBOARD</h2>
-                <p>Training, recovery, and progress at a glance.</p>
-              </div>
-              <article class="app-card workout-card">
-                <div class="card-row"><span class="tag">TODAY</span><span class="status-dot"></span></div>
-                <h3>Upper Body</h3>
-                <p>Chest · Back · Shoulders · Arms</p>
-                <button type="button">Start workout</button>
-              </article>
-              <article class="app-card summary-card">
-                <div class="card-row"><div><span class="tag">LAST 7 DAYS</span><h3>Training Summary</h3></div><span class="tiny-pill">Active program</span></div>
-                <div class="summary-grid">
-                  <div><span>Workouts</span><strong>3<small>/4</small></strong><i style="--fill:75%"></i></div>
-                  <div><span>Working sets</span><strong>42<small>/56</small></strong><i style="--fill:75%"></i></div>
-                  <div><span>Exercises</span><strong>18<small>/24</small></strong><i style="--fill:75%"></i></div>
-                </div>
-              </article>
-              <div class="mini-cards">
-                <article class="app-card"><span class="tag">PROTEIN</span><strong>185 g</strong><small>Daily target</small></article>
-                <article class="app-card"><span class="tag">RECOVERY</span><strong class="green">Ready</strong><small>Most muscles</small></article>
-              </div>
-              <div class="app-nav"><span class="active">⌂<small>Home</small></span><span>◇<small>Workout</small></span><span>↗<small>Progress</small></span><span>◎<small>Calories</small></span></div>
-            </div>
+          <div class="hero-meta">
+            <div><strong>Smart Builder</strong><span>Programs around your goals</span></div>
+            <div><strong>Progression guidance</strong><span>Know when to add load</span></div>
+            <div><strong>Muscle analytics</strong><span>See volume and recovery</span></div>
           </div>
         </div>
-      </section>
 
-      <section class="trust-strip" aria-label="Level Up focus areas">
-        <div>PROGRAM BUILDING</div><span>•</span><div>WORKOUT LOGGING</div><span>•</span><div>PROGRESSIVE OVERLOAD</div><span>•</span><div>MUSCLE ANALYTICS</div><span>•</span><div>RECOVERY</div>
-      </section>
-
-      <section id="features" class="section-wrap section-block">
-        <div class="section-heading">
-          <div><span class="eyebrow"><span></span> EVERYTHING IN ONE PLACE</span><h2>Built around the way you actually train.</h2></div>
-          <p>No cluttered social feed. No generic motivational noise. Level Up is designed to help you plan, log, review, and improve your training.</p>
-        </div>
-
-        <div class="feature-grid">
-          <article class="feature-card feature-wide">
-            <div class="feature-icon">01</div>
-            <div><span class="tag">PROGRAMS</span><h3>Build a plan that fits you.</h3><p>Use Smart Builder, start from a template, or build every day manually. Your plan stays editable as your training changes.</p></div>
-            <div class="builder-visual">
-              <div><span>Goal</span><strong>Build muscle</strong></div><div><span>Days / week</span><strong>4 days</strong></div><div><span>Priority</span><strong>Chest + back</strong></div>
-              <button type="button">Build my program →</button>
+        <div class="hero-phone" aria-label="Level Up workout logger preview">
+          <div class="phone-shell">
+            <div class="phone-status"><span>9:41</span><b></b><span>●●●</span></div>
+            <div class="phone-title"><span>WORKOUT</span><strong>Upper Body</strong><small>Day 2 of 4</small></div>
+            <div class="phone-exercise">
+              <div class="phone-exercise-head"><div><span>CHEST</span><h3>Bench Press</h3></div><b>3 SETS</b></div>
+              <div class="phone-set-head"><span>SET</span><span>LAST</span><span>TODAY</span></div>
+              <div class="phone-set"><b>1</b><span>180 × 10</span><strong>185 × 10</strong></div>
+              <div class="phone-set"><b>2</b><span>180 × 10</span><strong>185 × 9</strong></div>
+              <div class="phone-set"><b>3</b><span>180 × 9</span><strong>—</strong></div>
+              <div class="phone-guidance"><span>PROGRESSION</span><strong>Rep target is moving up.</strong><small>Keep the load until you own the top of your range.</small></div>
             </div>
-          </article>
-
-          <article class="feature-card">
-            <div class="feature-icon">02</div><span class="tag">PROGRESSION</span><h3>Know when to add weight.</h3><p>Level Up compares your reps against your target range and gives progression guidance when you earn it.</p>
-            <div class="progression-visual"><span>Bench Press</span><strong>185 lb × 12</strong><small>Target reached</small><div><i></i></div><b>Increase load next session</b></div>
-          </article>
-
-          <article class="feature-card">
-            <div class="feature-icon">03</div><span class="tag">MUSCLE VOLUME</span><h3>See where your sets are going.</h3><p>Review weekly training distribution and understand which muscle groups are getting the most work.</p>
-            <div class="bars"><div><span>Chest</span><i style="--w:88%"></i><b>16</b></div><div><span>Back</span><i style="--w:76%"></i><b>14</b></div><div><span>Quads</span><i style="--w:62%"></i><b>11</b></div><div><span>Biceps</span><i style="--w:46%"></i><b>8</b></div></div>
-          </article>
-
-          <article class="feature-card">
-            <div class="feature-icon">04</div><span class="tag">RECOVERY</span><h3>Bring context into the next workout.</h3><p>See recent muscle exposure and recovery context alongside the rest of your training data.</p>
-            <div class="recovery-visual"><div class="body-dot chest"></div><div class="body-dot quad"></div><svg viewBox="0 0 100 160" aria-hidden="true"><circle cx="50" cy="20" r="13"/><path d="M35 40 Q50 31 65 40 L72 85 61 90 58 145 44 145 41 90 28 85Z"/><path d="M34 44 16 84M66 44 84 84"/></svg><span>Training exposure<br><strong>7-day view</strong></span></div>
-          </article>
-
-          <article class="feature-card">
-            <div class="feature-icon">05</div><span class="tag">WORKOUT LOGGER</span><h3>Fast enough to use between sets.</h3><p>Previous performance, set targets, timers, supersets, exercise swaps, form guides, and plate calculations stay close at hand.</p>
-            <div class="logger-visual"><div><span>Set</span><span>Previous</span><span>Today</span></div><div><b>1</b><span>180 × 10</span><strong>185 × 10 ✓</strong></div><div><b>2</b><span>180 × 10</span><strong>185 × 9</strong></div><div><b>3</b><span>180 × 9</span><strong>—</strong></div></div>
-          </article>
-
-          <article class="feature-card">
-            <div class="feature-icon">06</div><span class="tag">PROGRESS</span><h3>Keep the long view.</h3><p>Track lifting performance, workout history, body weight trends, calorie targets, and protein in one place.</p>
-            <div class="chart-visual"><span>Estimated strength</span><svg viewBox="0 0 260 90" preserveAspectRatio="none" aria-hidden="true"><path class="grid" d="M0 20H260M0 45H260M0 70H260"/><path class="line" d="M0 75 C30 68 45 63 70 62 S110 49 130 51 170 39 188 42 222 25 260 18"/></svg><div><small>May</small><small>Jun</small><small>Jul</small><small>Aug</small></div></div>
-          </article>
+            <div class="phone-nav"><span>Home</span><span class="active">Workout</span><span>Progress</span><span>Calories</span></div>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="how-it-works" class="section-wrap section-block how-section">
-        <div class="section-heading compact"><div><span class="eyebrow"><span></span> SIMPLE BY DESIGN</span><h2>From plan to progress in three steps.</h2></div></div>
-        <div class="steps">
-          <article><span>01</span><h3>Build your program</h3><p>Choose your goals, schedule, priorities, and exercise preferences—or build it manually.</p></article>
-          <article><span>02</span><h3>Log what you actually do</h3><p>Record sets and reps during training with previous performance and progression guidance beside you.</p></article>
-          <article><span>03</span><h3>Use the feedback</h3><p>Review performance, volume, recovery, and body-weight trends to make better training decisions.</p></article>
+    <section class="proof-bar">
+      <div><strong>PLAN</strong><span>Smart Builder + templates + manual plans</span></div>
+      <div><strong>TRAIN</strong><span>Fast workout logger with previous performance</span></div>
+      <div><strong>PROGRESS</strong><span>Overload guidance, strength and volume trends</span></div>
+      <div><strong>RECOVER</strong><span>Muscle exposure and recovery context</span></div>
+    </section>
+
+    <section id="features" class="section intro-section">
+      <div class="section-copy">
+        <span class="eyebrow">THE TRAINING SYSTEM</span>
+        <h2>Less guessing.<br>More useful training data.</h2>
+      </div>
+      <div class="section-lede">
+        <p>Level Up is built for lifters who care about hypertrophy but do not want to spend the whole workout managing a spreadsheet. The app keeps the important information close to the set you are actually doing.</p>
+        <a class="inline-link" href="https://jrgallop-code.github.io/forge-fitness/">Open the app <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="feature-band">
+      <article class="feature-band-item"><span>01</span><h3>Smart program building</h3><p>Choose your training goal, schedule, muscle priorities, exercise preferences, and constraints. Level Up builds the program around them.</p></article>
+      <article class="feature-band-item"><span>02</span><h3>Progression you can act on</h3><p>Rep-range guidance helps you see when it is time to keep building reps, add load, or adjust the target instead of guessing.</p></article>
+      <article class="feature-band-item"><span>03</span><h3>See your weekly muscle work</h3><p>Muscle maps and volume breakdowns show how your plan and completed training are distributed across the body.</p></article>
+      <article class="feature-band-item"><span>04</span><h3>Bring body weight into context</h3><p>Weight trends, calorie targets, protein and macros sit alongside training so gaining or cutting does not live in a separate spreadsheet.</p></article>
+    </section>
+
+    <section class="split-showcase dark-showcase">
+      <div class="showcase-photo female-photo">
+        <div class="photo-label"><span>REAL TRAINING</span><strong>Built for the gym floor.</strong></div>
+      </div>
+      <div class="showcase-content">
+        <span class="eyebrow">WORKOUT LOGGER</span>
+        <h2>Everything you need between sets. Nothing you do not.</h2>
+        <p>Previous performance, set targets, rep ranges, timers, supersets, exercise swaps, form guides, cardio fields and plate calculations stay in the workout instead of sending you through menus.</p>
+        <ul class="check-list">
+          <li>See your latest non-blank performance beside today’s set</li>
+          <li>Get progression guidance based on the rep range you chose</li>
+          <li>Swap exercises or adjust sets without rebuilding the plan</li>
+          <li>Resume and edit workouts without losing the session</li>
+        </ul>
+        <a class="button button-outline" href="https://jrgallop-code.github.io/forge-fitness/">Try the workout logger <span>↗</span></a>
+      </div>
+    </section>
+
+    <section id="system" class="section product-section">
+      <div class="product-heading">
+        <span class="eyebrow">SMART BUILDER</span>
+        <h2>Tell Level Up what you want to grow.</h2>
+        <p>Start with the outcome, not a generic split. Choose your training days, session length, muscle priorities and exercises you want to avoid, then refine the result before you save it.</p>
+      </div>
+      <div class="builder-panel">
+        <div class="builder-steps">
+          <div class="builder-step active"><span>1</span><div><small>GOAL</small><strong>Build muscle</strong></div></div>
+          <div class="builder-step"><span>2</span><div><small>SCHEDULE</small><strong>4 days / week</strong></div></div>
+          <div class="builder-step"><span>3</span><div><small>PRIORITY</small><strong>Chest + back</strong></div></div>
+          <div class="builder-step"><span>4</span><div><small>SESSION</small><strong>60 minutes</strong></div></div>
         </div>
-      </section>
-
-      <section id="beta" class="section-wrap section-block">
-        <div class="beta-card">
-          <div class="beta-noise"></div>
-          <div class="beta-copy"><span class="eyebrow light"><span></span> FOUNDING BETA</span><h2>Use Level Up while we build what comes next.</h2><p>The current beta is free. Train with it, put the logger through real workouts, and help shape the product before the full public launch.</p><div class="hero-actions"><a class="button button-light" href="https://jrgallop-code.github.io/forge-fitness/">Open Level Up <span>↗</span></a><a class="button button-dark" href="#faq">Read the FAQ</a></div></div>
-          <div class="beta-stats"><div><span>01</span><strong>Open in Safari or Chrome</strong></div><div><span>02</span><strong>Add to your home screen</strong></div><div><span>03</span><strong>Start training</strong></div></div>
+        <div class="builder-result">
+          <span class="panel-kicker">YOUR PLAN</span>
+          <h3>Upper / Lower · 4 days</h3>
+          <div class="day-row"><span>MON</span><strong>Upper A</strong><small>Chest emphasis · 6 exercises</small></div>
+          <div class="day-row"><span>TUE</span><strong>Lower A</strong><small>Quads emphasis · 5 exercises</small></div>
+          <div class="day-row"><span>THU</span><strong>Upper B</strong><small>Back emphasis · 6 exercises</small></div>
+          <div class="day-row"><span>FRI</span><strong>Lower B</strong><small>Posterior chain · 5 exercises</small></div>
+          <a href="https://jrgallop-code.github.io/forge-fitness/">Build a program <span>→</span></a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="faq" class="section-wrap section-block faq-section">
-        <div class="section-heading compact"><div><span class="eyebrow"><span></span> FAQ</span><h2>Before your first workout.</h2></div></div>
-        <div class="faq-list">
-          <details><summary>What is Level Up?</summary><p>Level Up is a hypertrophy-focused training app for building workout programs, logging sessions, tracking progression, and reviewing your training data.</p></details>
-          <details><summary>Do I need to download it from an app store?</summary><p>No. The beta runs as a Progressive Web App. Open it in your phone browser and add it to your home screen for an app-like experience.</p></details>
-          <details><summary>Is the beta free?</summary><p>Yes. The founding beta is free to use while Level Up is being tested and improved.</p></details>
-          <details><summary>Can I build my own workout program?</summary><p>Yes. You can manually create a program, use templates, or use the guided Smart Builder to create a plan around your training goals.</p></details>
-          <details><summary>Is Level Up only for advanced lifters?</summary><p>No. It is designed to keep the logging experience straightforward while giving lifters deeper training context when they want it.</p></details>
+    <section class="athlete-break">
+      <div class="athlete-break-photo"></div>
+      <div class="athlete-break-shade"></div>
+      <div class="athlete-break-copy">
+        <span class="eyebrow light">PROGRESSION WITH CONTEXT</span>
+        <h2>Your logbook should tell you what changed.</h2>
+        <p>Level Up connects each session to the one before it, then gives you the context to decide what comes next.</p>
+      </div>
+    </section>
+
+    <section class="section analytics-section">
+      <div class="analytics-copy">
+        <span class="eyebrow">MUSCLE ANALYTICS</span>
+        <h2>See the work behind the physique.</h2>
+        <p>Weekly set distribution, muscle breakdowns and recovery views give you a quick visual read on the training you are actually accumulating.</p>
+        <div class="analytics-points">
+          <div><strong>Volume</strong><span>Weekly muscle-set distribution across the body</span></div>
+          <div><strong>Recovery</strong><span>Recent exposure and recovery context by muscle</span></div>
+          <div><strong>History</strong><span>Longer-term lifting and workout trends when you need them</span></div>
         </div>
-      </section>
+      </div>
+      <div class="analytics-visual">
+        <div class="muscle-map">
+          <span class="map-title">WEEKLY VOLUME</span>
+          <svg viewBox="0 0 180 310" aria-hidden="true">
+            <circle cx="90" cy="35" r="27"/>
+            <path d="M60 68 Q90 48 120 68 L133 145 115 155 108 282 91 282 85 165 78 282 61 282 54 155 37 145Z"/>
+            <path d="M59 78 24 153M121 78 156 153"/>
+          </svg>
+          <i class="glow chest"></i><i class="glow quad-left"></i><i class="glow quad-right"></i><i class="glow arm-left"></i>
+        </div>
+        <div class="volume-list">
+          <div><span>Chest</span><b><i style="--w:91%"></i></b><strong>16 sets</strong></div>
+          <div><span>Back</span><b><i style="--w:78%"></i></b><strong>14 sets</strong></div>
+          <div><span>Quads</span><b><i style="--w:67%"></i></b><strong>12 sets</strong></div>
+          <div><span>Shoulders</span><b><i style="--w:52%"></i></b><strong>9 sets</strong></div>
+          <div><span>Biceps</span><b><i style="--w:44%"></i></b><strong>8 sets</strong></div>
+        </div>
+      </div>
+    </section>
 
-      <section class="section-wrap final-cta">
-        <div><span class="eyebrow"><span></span> READY WHEN YOU ARE</span><h2>Your next workout already has data worth keeping.</h2></div>
-        <a class="button button-primary" href="https://jrgallop-code.github.io/forge-fitness/">Try Level Up free <span>↗</span></a>
-      </section>
-    </main>
+    <section class="section weight-section">
+      <div class="weight-card">
+        <span class="eyebrow light">BODY WEIGHT + NUTRITION</span>
+        <h2>Training does not happen in a vacuum.</h2>
+        <p>Track body weight, your 7-day trend, calorie target, protein and macros alongside the training plan. Enough context to support a gaining or cutting phase without turning Level Up into a food-logging app.</p>
+        <div class="weight-metrics">
+          <div><small>WEIGHT TREND</small><strong>178.6 <span>lb</span></strong><em>7-day moving average</em></div>
+          <div><small>CALORIE TARGET</small><strong>2,650 <span>kcal</span></strong><em>active phase target</em></div>
+          <div><small>PROTEIN</small><strong>185 <span>g</span></strong><em>daily target</em></div>
+        </div>
+      </div>
+    </section>
 
-    <footer class="site-footer section-wrap">
+    <section class="section process-section">
+      <div class="process-heading"><span class="eyebrow">HOW LEVEL UP WORKS</span><h2>Build. Train. Review. Repeat.</h2></div>
+      <div class="process-grid">
+        <article><span>01</span><h3>Build the program</h3><p>Use Smart Builder, a template, or create the entire program manually.</p></article>
+        <article><span>02</span><h3>Log the real workout</h3><p>Record the sets you actually complete, not the workout you hoped to do.</p></article>
+        <article><span>03</span><h3>Progress when earned</h3><p>Use rep-range and prior-performance context to decide what to push next.</p></article>
+        <article><span>04</span><h3>Review the bigger picture</h3><p>Check training, muscle volume, recovery and weight trends over time.</p></article>
+      </div>
+    </section>
+
+    <section id="beta" class="beta-section">
+      <div class="beta-photo"></div>
+      <div class="beta-panel">
+        <span class="eyebrow light">FOUNDING BETA</span>
+        <h2>Serious training tools.<br>Free while we build.</h2>
+        <p>Level Up is currently in beta. Open it in your browser, add it to your home screen, and use it like an app while the product continues to improve.</p>
+        <div class="hero-actions">
+          <a class="button button-white" href="https://jrgallop-code.github.io/forge-fitness/">Open Level Up <span>↗</span></a>
+          <span class="beta-note">No credit card · Browser-based beta</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq-section">
+      <div class="faq-heading"><span class="eyebrow">FAQ</span><h2>Before your first session.</h2></div>
+      <div class="faq-list">
+        <details><summary>What is Level Up?</summary><p>Level Up is a hypertrophy-focused training app for building workout programs, logging sessions, tracking progression, reviewing muscle volume and recovery, and keeping body-weight and nutrition targets in context.</p></details>
+        <details><summary>Is the beta free?</summary><p>Yes. The current founding beta is free to use.</p></details>
+        <details><summary>Do I need the App Store or Google Play?</summary><p>No. The beta runs as a Progressive Web App. Open it in Safari or Chrome and add it to your home screen for an app-like experience.</p></details>
+        <details><summary>Can Level Up build a workout plan for me?</summary><p>Yes. Smart Builder can create a plan around your goal, schedule and priorities. You can also use templates or build a plan completely manually.</p></details>
+        <details><summary>Can I still change exercises and sets?</summary><p>Yes. Saved plans and workouts remain editable so you can adjust exercises, set counts, rep ranges and substitutions as your training changes.</p></details>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div><span class="eyebrow light">YOUR NEXT SESSION</span><h2>Stop losing useful training data.</h2><p>Build the plan, log the work, and make the next session better informed than the last.</p></div>
+      <a class="button button-white" href="https://jrgallop-code.github.io/forge-fitness/">Try Level Up free <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
       <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i></span><span class="brand-copy"><strong>LEVEL UP</strong><small>HYPERTROPHY TRAINING</small></span></a>
-      <p>Build your plan. Record the work. See the progress.</p>
-      <div class="footer-links"><a href="#features">Features</a><a href="#faq">FAQ</a><a href="https://jrgallop-code.github.io/forge-fitness/">Open app</a></div>
+      <div class="footer-links"><a href="#features">Features</a><a href="#system">How it works</a><a href="#faq">FAQ</a><a href="https://jrgallop-code.github.io/forge-fitness/">Open app</a></div>
+    </div>
+    <div class="footer-bottom">
       <small>© <span data-year></span> Level Up. All rights reserved.</small>
-    </footer>
-  </div>
+      <small class="photo-credit">Photography via Pexels: Pikx By Panther, Marcus Chan Media, Foad Shariyati.</small>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
