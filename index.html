@@ -6,24 +6,38 @@
   <meta name="theme-color" content="#070707">
   <meta name="description" content="Level Up is an evidence-informed hypertrophy training app with coaching-style guidance that uses your logged performance and weight trends to tell you when to push, hold, or adjust.">
   <meta property="og:title" content="Level Up — Science-Based Hypertrophy Coaching">
-  <meta property="og:description" content="Evidence-informed hypertrophy coaching that turns your training data into practical adjustments.">
+  <meta property="og:description" content="Train with purpose. Progress with proof. Evidence-informed hypertrophy coaching built around your training data.">
   <meta property="og:type" content="website">
   <title>Level Up — Science-Based Hypertrophy Coaching</title>
   <link rel="preconnect" href="https://images.pexels.com">
-  <link rel="stylesheet" href="styles.css?v=science-coach-1">
+  <link rel="stylesheet" href="styles.css?v=proof-volume-1">
   <style>
+    .brand-logo-image{width:48px;height:48px;object-fit:cover;border-radius:12px;flex:none;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+    .site-footer .brand-logo-image{width:52px;height:52px}
     .science-badge{display:inline-flex;align-items:center;gap:10px;margin-top:18px;padding:10px 12px;border:1px solid rgba(255,255,255,.22);background:rgba(0,0,0,.42);backdrop-filter:blur(8px)}
-    .science-badge b{font-size:9px;letter-spacing:.16em;color:#fff}.science-badge span{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 14px rgba(85,220,136,.75)}.science-badge small{font-size:9px;color:#aaa9a7}
+    .science-badge b{font-size:9px;letter-spacing:.16em;color:#fff}.science-badge>span{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 14px rgba(85,220,136,.75)}.science-badge small{font-size:9px;color:#aaa9a7}
     .science-section{width:min(var(--max),calc(100% - 48px));margin:0 auto;padding:128px 0 120px}.science-head{display:grid;grid-template-columns:1.05fr .7fr;gap:90px;align-items:end;margin-bottom:48px}.science-head h2{font-size:clamp(44px,5.7vw,76px);letter-spacing:-.058em;line-height:.94;margin:16px 0 0}.science-head p{margin:0;color:#a2a19e;font-size:15px;line-height:1.75}.science-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.science-card{position:relative;min-height:320px;padding:34px 30px 38px;border-right:1px solid var(--line);background:linear-gradient(145deg,#101011,#09090a)}.science-card:first-child{border-left:1px solid var(--line)}.science-card .science-num{font-size:10px;color:var(--red);font-weight:900;letter-spacing:.12em}.science-card h3{font-size:26px;line-height:1.05;letter-spacing:-.04em;margin:48px 0 14px}.science-card p{font-size:13px;line-height:1.7;color:#8d8c89;margin:0}.science-card strong{color:#e7e6e3}.science-source{display:flex;justify-content:space-between;gap:30px;align-items:center;margin-top:26px;padding:22px 24px;border:1px solid var(--line);background:#0c0c0d}.science-source-copy{display:grid;gap:5px}.science-source-copy strong{font-size:12px}.science-source-copy span{font-size:10px;color:#777673;line-height:1.5}.science-links{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:9px}.science-links a{font-size:9px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;border:1px solid rgba(255,255,255,.22);padding:10px 12px;color:#d6d5d2}.science-links a:hover{border-color:var(--red);color:#fff}.science-note{margin:17px 0 0;color:#666561;font-size:10px;line-height:1.55;max-width:900px}.science-word{color:var(--red)}
     .evidence-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.12);margin-top:30px;border:1px solid var(--line)}.evidence-strip div{background:#0c0c0d;padding:18px 20px;display:grid;gap:5px}.evidence-strip strong{font-size:11px;text-transform:uppercase;letter-spacing:.06em}.evidence-strip span{font-size:9px;color:#777673;line-height:1.45}
+
+    /* Real Level Up muscle-volume presentation */
+    .analytics-real{min-height:620px;border:1px solid var(--line);border-radius:22px;background:#101014;padding:22px;display:grid;grid-template-columns:1.12fr .88fr;gap:18px;box-shadow:0 28px 70px rgba(0,0,0,.28)}
+    .real-volume-card,.real-breakdown-card{border:1px solid rgba(255,255,255,.10);border-radius:20px;background:#15151a;padding:22px;overflow:hidden}
+    .real-card-top{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:20px}.real-card-top span{display:block;color:#ff4d72;font-size:10px;font-weight:900;letter-spacing:.16em}.real-card-top h3{margin:7px 0 0;font-size:26px;letter-spacing:-.04em}.real-card-top small{color:#a6a5ad;font-size:10px;font-weight:800;white-space:nowrap}
+    .real-map-stage{position:relative;min-height:405px;border:1px solid rgba(255,255,255,.09);border-radius:18px;background:#101014;display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:end;padding:24px 14px 18px}
+    .real-figure{position:relative;height:335px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end}.real-figure img{height:295px;width:auto;max-width:100%;filter:grayscale(1) brightness(.92) contrast(1.05);opacity:.92;position:relative;z-index:1}.real-figure b{font-size:11px;color:#c9c8ce;margin-top:8px}.real-highlight{position:absolute;z-index:2;background:rgba(72,207,125,.60);mix-blend-mode:screen;filter:blur(1px);pointer-events:none}.real-figure.front .real-highlight.chest{width:82px;height:48px;border-radius:45%;top:74px;left:50%;transform:translateX(-50%)}.real-figure.front .real-highlight.shoulder-l{width:32px;height:32px;border-radius:50%;top:72px;left:23%}.real-figure.front .real-highlight.shoulder-r{width:32px;height:32px;border-radius:50%;top:72px;right:23%}.real-figure.back .real-highlight.back{width:86px;height:126px;border-radius:45% 45% 30% 30%;top:78px;left:50%;transform:translateX(-50%);opacity:.62}.real-figure.back .real-highlight.traps{width:35px;height:72px;border-radius:40%;top:42px;left:50%;transform:translateX(-50%);opacity:.58}
+    .volume-scale-row{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:10px;margin-top:15px;color:#a5a4aa;font-size:9px;font-weight:900;letter-spacing:.10em}.volume-scale-bar{height:8px;border-radius:99px;background:linear-gradient(90deg,#aeb8bd,#3d7557,#188a42,#48cf7d);border:1px solid rgba(255,255,255,.14)}
+    .real-breakdown-card{display:flex;flex-direction:column;justify-content:center}.breakdown-title{display:flex;align-items:end;justify-content:space-between;gap:10px;margin-bottom:28px}.breakdown-title h3{font-size:28px;margin:0;line-height:1.05;letter-spacing:-.04em}.breakdown-title small{font-size:10px;color:#9f9ea6;font-weight:800;text-align:right}.breakdown-row{margin-bottom:24px}.breakdown-label{display:flex;justify-content:space-between;gap:15px;align-items:center;margin-bottom:10px}.breakdown-label strong{font-size:19px}.breakdown-label span{color:#c1c0c7;font-size:17px;font-weight:800}.breakdown-track{height:11px;background:#2b2b31;border-radius:99px;overflow:hidden}.breakdown-fill{height:100%;background:#48cf7d;border-radius:99px;width:var(--w)}
+    .real-note{margin:17px 0 0;color:#77767d;font-size:10px;line-height:1.55;text-align:center}
+
+    @media(max-width:1000px){.analytics-real{grid-template-columns:1fr}.real-map-stage{min-height:430px}.real-breakdown-card{min-height:390px}}
     @media(max-width:900px){.science-head{grid-template-columns:1fr;gap:24px}.science-grid{grid-template-columns:1fr}.science-card{min-height:0;border-left:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.science-card:last-child{border-bottom:0}.science-card h3{margin-top:28px}.science-source{align-items:flex-start;flex-direction:column}.science-links{justify-content:flex-start}.evidence-strip{grid-template-columns:1fr}}
-    @media(max-width:600px){.science-section{width:min(var(--max),calc(100% - 32px));padding:90px 0}.science-badge{align-items:flex-start;flex-wrap:wrap}.science-card{padding:27px 23px}.science-source{padding:20px}}
+    @media(max-width:600px){.science-section{width:min(var(--max),calc(100% - 32px));padding:90px 0}.science-badge{align-items:flex-start;flex-wrap:wrap}.science-card{padding:27px 23px}.science-source{padding:20px}.brand-logo-image{width:42px;height:42px}.analytics-real{padding:10px;border-radius:17px}.real-volume-card,.real-breakdown-card{padding:16px}.real-map-stage{min-height:360px;padding:18px 6px 14px}.real-figure{height:290px}.real-figure img{height:250px}.real-figure.front .real-highlight.chest{width:66px;height:39px;top:70px}.real-figure.front .real-highlight.shoulder-l,.real-figure.front .real-highlight.shoulder-r{width:27px;height:27px;top:69px}.real-figure.back .real-highlight.back{width:70px;height:105px;top:75px}.real-figure.back .real-highlight.traps{height:60px;top:45px}.breakdown-title{align-items:flex-start;flex-direction:column}.breakdown-title small{text-align:left}}
   </style>
 </head>
 <body>
   <header class="site-header" data-header>
     <a class="brand" href="#top" aria-label="Level Up home">
-      <span class="brand-mark" aria-hidden="true"><i></i><i></i></span>
+      <img class="brand-logo-image" src="assets/level-up-site-logo.svg" alt="Level Up logo">
       <span class="brand-copy"><strong>LEVEL UP</strong><small>HYPERTROPHY TRAINING</small></span>
     </a>
     <button class="menu-button" type="button" data-menu-button aria-expanded="false" aria-controls="site-nav">Menu</button>
@@ -43,8 +57,8 @@
       <div class="hero-inner">
         <div class="hero-copy">
           <span class="kicker">SCIENCE-BASED HYPERTROPHY COACHING</span>
-          <h1>Train with data.<br><em>Adjust with evidence.</em></h1>
-          <p>Level Up combines evidence-informed hypertrophy principles with the training and body-weight data you log. It helps you know when to push, when to hold, and when an adjustment is actually justified.</p>
+          <h1>Train with purpose.<br><em>Progress with proof.</em></h1>
+          <p>Level Up combines evidence-informed hypertrophy principles with the training and body-weight data you log. Build a plan with purpose, track what actually happens, and get guidance when the evidence supports an adjustment.</p>
           <div class="science-badge"><span></span><b>EVIDENCE-INFORMED</b><small>Progressive resistance · weekly volume · performance-based adjustments</small></div>
           <div class="hero-actions">
             <a class="button button-primary" href="https://jrgallop-code.github.io/forge-fitness/">Try the free beta <span>↗</span></a>
@@ -108,194 +122,80 @@
         </div>
         <p>Level Up is designed around principles supported by resistance-training research, then applies them conservatively to your own data. It does not assume there is one perfect rep range, one perfect split, or a reason to change something every week.</p>
       </div>
-
       <div class="science-grid">
-        <article class="science-card">
-          <span class="science-num">01 · PROGRESSION</span>
-          <h3>Progress the stimulus when performance supports it.</h3>
-          <p>Progressive resistance training is a core recommendation in the current ACSM position stand. Level Up ties load guidance to what you actually completed instead of automatically adding weight because another week passed.</p>
-        </article>
-        <article class="science-card">
-          <span class="science-num">02 · VOLUME</span>
-          <h3>Weekly muscle volume is worth paying attention to.</h3>
-          <p>Research supports a relationship between resistance-training volume and hypertrophy, with current evidence favoring <strong>multiple weekly sets</strong> rather than treating every program as equivalent. Level Up makes muscle-set distribution visible so volume is something you can actually manage.</p>
-        </article>
-        <article class="science-card">
-          <span class="science-num">03 · FLEXIBILITY</span>
-          <h3>Hypertrophy is not locked to one magic load or rep range.</h3>
-          <p>Meta-analyses show muscle growth can occur across a broad range of training loads. Level Up uses your programmed rep range as a practical progression target — not as a claim that one narrow rep range is the only way to build muscle.</p>
-        </article>
+        <article class="science-card"><span class="science-num">01 · PROGRESSION</span><h3>Progress the stimulus when performance supports it.</h3><p>Progressive resistance training is a core recommendation in the current ACSM position stand. Level Up ties load guidance to what you actually completed instead of automatically adding weight because another week passed.</p></article>
+        <article class="science-card"><span class="science-num">02 · VOLUME</span><h3>Weekly muscle volume is worth paying attention to.</h3><p>Research supports a relationship between resistance-training volume and hypertrophy, with current evidence favoring <strong>multiple weekly sets</strong> rather than treating every program as equivalent. Level Up makes muscle-set distribution visible so volume is something you can actually manage.</p></article>
+        <article class="science-card"><span class="science-num">03 · FLEXIBILITY</span><h3>Hypertrophy is not locked to one magic load or rep range.</h3><p>Meta-analyses show muscle growth can occur across a broad range of training loads. Level Up uses your programmed rep range as a practical progression target — not as a claim that one narrow rep range is the only way to build muscle.</p></article>
       </div>
-
-      <div class="evidence-strip">
-        <div><strong>Progressive resistance</strong><span>Increase the challenge when performance earns it.</span></div>
-        <div><strong>Sufficient weekly work</strong><span>Track muscle volume instead of guessing where the sets went.</span></div>
-        <div><strong>Individual response</strong><span>Use your log and trend data before changing the plan.</span></div>
-      </div>
-
-      <div class="science-source">
-        <div class="science-source-copy">
-          <strong>Read the evidence Level Up is built around.</strong>
-          <span>Peer-reviewed sources on resistance-training prescription, weekly volume, and hypertrophy across different loads.</span>
-        </div>
-        <div class="science-links">
-          <a href="https://pubmed.ncbi.nlm.nih.gov/41843416/" target="_blank" rel="noopener">ACSM 2026 ↗</a>
-          <a href="https://pubmed.ncbi.nlm.nih.gov/27433992/" target="_blank" rel="noopener">Weekly volume ↗</a>
-          <a href="https://pubmed.ncbi.nlm.nih.gov/33874848/" target="_blank" rel="noopener">Training load ↗</a>
-        </div>
-      </div>
+      <div class="evidence-strip"><div><strong>Progressive resistance</strong><span>Increase the challenge when performance earns it.</span></div><div><strong>Sufficient weekly work</strong><span>Track muscle volume instead of guessing where the sets went.</span></div><div><strong>Individual response</strong><span>Use your log and trend data before changing the plan.</span></div></div>
+      <div class="science-source"><div class="science-source-copy"><strong>Read the evidence Level Up is built around.</strong><span>Peer-reviewed sources on resistance-training prescription, weekly volume, and hypertrophy across different loads.</span></div><div class="science-links"><a href="https://pubmed.ncbi.nlm.nih.gov/41843416/" target="_blank" rel="noopener">ACSM 2026 ↗</a><a href="https://pubmed.ncbi.nlm.nih.gov/27433992/" target="_blank" rel="noopener">Weekly volume ↗</a><a href="https://pubmed.ncbi.nlm.nih.gov/33874848/" target="_blank" rel="noopener">Training load ↗</a></div></div>
       <p class="science-note">“Science-based” here means Level Up’s training rules are designed around current evidence and applied to the data you log. It does not mean the Level Up app itself has been tested as a complete intervention in a clinical trial, or that any algorithm replaces individualized medical or professional coaching.</p>
     </section>
 
     <section class="split-showcase dark-showcase">
-      <div class="showcase-photo female-photo">
-        <div class="photo-label"><span>COACHING IN THE WORKOUT</span><strong>Guidance where you need it.</strong></div>
-      </div>
+      <div class="showcase-photo female-photo"><div class="photo-label"><span>COACHING IN THE WORKOUT</span><strong>Guidance where you need it.</strong></div></div>
       <div class="showcase-content">
         <span class="eyebrow">PERFORMANCE-BASED PROGRESSION</span>
         <h2>The app coaches the set you are actually doing.</h2>
         <p>Level Up compares your performance with the rep range you programmed and your previous workout. It does not blindly tell you to add weight every week — it waits for the performance to justify the recommendation.</p>
-        <ul class="check-list">
-          <li>Reach the top of your programmed range across completed working sets and Level Up can recommend a load increase</li>
-          <li>If most completed sets fall below the range, it can suggest reducing the load instead of forcing progression</li>
-          <li>One low set does not trigger a reduction — Level Up looks for a pattern before reacting</li>
-          <li>Your previous non-blank performance stays beside today’s sets so the recommendation has context</li>
-        </ul>
+        <ul class="check-list"><li>Reach the top of your programmed range across completed working sets and Level Up can recommend a load increase</li><li>If most completed sets fall below the range, it can suggest reducing the load instead of forcing progression</li><li>One low set does not trigger a reduction — Level Up looks for a pattern before reacting</li><li>Your previous non-blank performance stays beside today’s sets so the recommendation has context</li></ul>
         <a class="button button-outline" href="https://jrgallop-code.github.io/forge-fitness/">Try the workout coaching <span>↗</span></a>
       </div>
     </section>
 
     <section id="system" class="section product-section">
-      <div class="product-heading">
-        <span class="eyebrow">SMART BUILDER</span>
-        <h2>Turn evidence into a plan that still fits real life.</h2>
-        <p>Evidence matters, but a plan also has to fit your schedule, priorities and exercise constraints. Smart Builder starts with your outcome, training days, session length, muscle priorities and exercises you want to avoid — then your logged performance becomes the feedback for what comes next.</p>
-      </div>
+      <div class="product-heading"><span class="eyebrow">SMART BUILDER</span><h2>Turn evidence into a plan that still fits real life.</h2><p>Evidence matters, but a plan also has to fit your schedule, priorities and exercise constraints. Smart Builder starts with your outcome, training days, session length, muscle priorities and exercises you want to avoid — then your logged performance becomes the feedback for what comes next.</p></div>
       <div class="builder-panel">
-        <div class="builder-steps">
-          <div class="builder-step active"><span>1</span><div><small>GOAL</small><strong>Build muscle</strong></div></div>
-          <div class="builder-step"><span>2</span><div><small>SCHEDULE</small><strong>4 days / week</strong></div></div>
-          <div class="builder-step"><span>3</span><div><small>PRIORITY</small><strong>Chest + back</strong></div></div>
-          <div class="builder-step"><span>4</span><div><small>SESSION</small><strong>60 minutes</strong></div></div>
-        </div>
-        <div class="builder-result">
-          <span class="panel-kicker">YOUR STARTING PLAN</span>
-          <h3>Upper / Lower · 4 days</h3>
-          <div class="day-row"><span>MON</span><strong>Upper A</strong><small>Chest emphasis · 6 exercises</small></div>
-          <div class="day-row"><span>TUE</span><strong>Lower A</strong><small>Quads emphasis · 5 exercises</small></div>
-          <div class="day-row"><span>THU</span><strong>Upper B</strong><small>Back emphasis · 6 exercises</small></div>
-          <div class="day-row"><span>FRI</span><strong>Lower B</strong><small>Posterior chain · 5 exercises</small></div>
-          <a href="https://jrgallop-code.github.io/forge-fitness/">Build a program <span>→</span></a>
-        </div>
+        <div class="builder-steps"><div class="builder-step active"><span>1</span><div><small>GOAL</small><strong>Build muscle</strong></div></div><div class="builder-step"><span>2</span><div><small>SCHEDULE</small><strong>4 days / week</strong></div></div><div class="builder-step"><span>3</span><div><small>PRIORITY</small><strong>Chest + back</strong></div></div><div class="builder-step"><span>4</span><div><small>SESSION</small><strong>60 minutes</strong></div></div></div>
+        <div class="builder-result"><span class="panel-kicker">YOUR STARTING PLAN</span><h3>Upper / Lower · 4 days</h3><div class="day-row"><span>MON</span><strong>Upper A</strong><small>Chest emphasis · 6 exercises</small></div><div class="day-row"><span>TUE</span><strong>Lower A</strong><small>Quads emphasis · 5 exercises</small></div><div class="day-row"><span>THU</span><strong>Upper B</strong><small>Back emphasis · 6 exercises</small></div><div class="day-row"><span>FRI</span><strong>Lower B</strong><small>Posterior chain · 5 exercises</small></div><a href="https://jrgallop-code.github.io/forge-fitness/">Build a program <span>→</span></a></div>
       </div>
     </section>
 
-    <section class="athlete-break">
-      <div class="athlete-break-photo"></div>
-      <div class="athlete-break-shade"></div>
-      <div class="athlete-break-copy">
-        <span class="eyebrow light">NO GIMMICKS. NO RANDOM CHANGES.</span>
-        <h2>A good coach waits for a signal. So does Level Up.</h2>
-        <p>Progression waits until the completed work reaches the target. Load reductions wait for a pattern of missed reps. Nutrition guidance waits for a useful weight trend. The goal is evidence-informed adjustments — not constant changes.</p>
-      </div>
-    </section>
+    <section class="athlete-break"><div class="athlete-break-photo"></div><div class="athlete-break-shade"></div><div class="athlete-break-copy"><span class="eyebrow light">NO GIMMICKS. NO RANDOM CHANGES.</span><h2>A good coach waits for a signal. So does Level Up.</h2><p>Progression waits until the completed work reaches the target. Load reductions wait for a pattern of missed reps. Nutrition guidance waits for a useful weight trend. The goal is evidence-informed adjustments — not constant changes.</p></div></section>
 
     <section class="section analytics-section">
       <div class="analytics-copy">
-        <span class="eyebrow">THE COACH NEEDS CONTEXT</span>
-        <h2>See the data behind the recommendation.</h2>
-        <p>Level Up keeps the bigger training picture visible so a single set is not the whole story. Weekly muscle volume, recovery context and longer-term training history help you understand what you are accumulating.</p>
-        <div class="analytics-points">
-          <div><strong>Volume</strong><span>See weekly muscle-set distribution across the body</span></div>
-          <div><strong>Recovery</strong><span>Review recent exposure and recovery context by muscle</span></div>
-          <div><strong>History</strong><span>Keep the longer-term lifting and workout trend available when you need it</span></div>
-        </div>
+        <span class="eyebrow">REAL MUSCLE VOLUME</span>
+        <h2>See where your weekly work is actually going.</h2>
+        <p>Level Up shows completed hypertrophy volume by muscle group, with front and back anatomy maps plus the exact set-credit breakdown behind the visual.</p>
+        <div class="analytics-points"><div><strong>Volume</strong><span>Rolling 7-day muscle-set distribution across the body</span></div><div><strong>Primary</strong><span>Primary target muscles receive 1.0 set credit</span></div><div><strong>Secondary</strong><span>Supported secondary muscles receive 0.5 set credit</span></div></div>
       </div>
-      <div class="analytics-visual">
-        <div class="muscle-map">
-          <span class="map-title">WEEKLY VOLUME</span>
-          <svg viewBox="0 0 180 310" aria-hidden="true">
-            <circle cx="90" cy="35" r="27"/>
-            <path d="M60 68 Q90 48 120 68 L133 145 115 155 108 282 91 282 85 165 78 282 61 282 54 155 37 145Z"/>
-            <path d="M59 78 24 153M121 78 156 153"/>
-          </svg>
-          <i class="glow chest"></i><i class="glow quad-left"></i><i class="glow quad-right"></i><i class="glow arm-left"></i>
+      <div class="analytics-real" aria-label="Level Up muscle volume example">
+        <div class="real-volume-card">
+          <div class="real-card-top"><div><span>MUSCLE VOLUME</span><h3>Your Last 7 Days</h3></div><small>1W VIEW</small></div>
+          <div class="real-map-stage">
+            <div class="real-figure front"><img src="https://jrgallop-code.github.io/forge-fitness/assets/recovery/front-view.svg" alt="Front muscle anatomy"><i class="real-highlight chest"></i><i class="real-highlight shoulder-l"></i><i class="real-highlight shoulder-r"></i><b>Front</b></div>
+            <div class="real-figure back"><img src="https://jrgallop-code.github.io/forge-fitness/assets/recovery/back-view.svg" alt="Back muscle anatomy"><i class="real-highlight back"></i><i class="real-highlight traps"></i><b>Back</b></div>
+          </div>
+          <div class="volume-scale-row"><span>LOWER</span><div class="volume-scale-bar"></div><span>HIGHER</span></div>
+          <p class="real-note">Green intensity increases continuously with completed set credits.</p>
         </div>
-        <div class="volume-list">
-          <div><span>Chest</span><b><i style="--w:91%"></i></b><strong>16 sets</strong></div>
-          <div><span>Back</span><b><i style="--w:78%"></i></b><strong>14 sets</strong></div>
-          <div><span>Quads</span><b><i style="--w:67%"></i></b><strong>12 sets</strong></div>
-          <div><span>Shoulders</span><b><i style="--w:52%"></i></b><strong>9 sets</strong></div>
-          <div><span>Biceps</span><b><i style="--w:44%"></i></b><strong>8 sets</strong></div>
+        <div class="real-breakdown-card">
+          <div class="breakdown-title"><h3>Muscle<br>Breakdown</h3><small>1W · Primary 1.0 · Secondary 0.5</small></div>
+          <div class="breakdown-row"><div class="breakdown-label"><strong>Shoulders</strong><span>8.5 sets</span></div><div class="breakdown-track"><div class="breakdown-fill" style="--w:100%"></div></div></div>
+          <div class="breakdown-row"><div class="breakdown-label"><strong>Chest</strong><span>5 sets</span></div><div class="breakdown-track"><div class="breakdown-fill" style="--w:59%"></div></div></div>
+          <div class="breakdown-row"><div class="breakdown-label"><strong>Back</strong><span>3 sets</span></div><div class="breakdown-track"><div class="breakdown-fill" style="--w:35%"></div></div></div>
+          <div class="breakdown-row"><div class="breakdown-label"><strong>Triceps</strong><span>2.5 sets</span></div><div class="breakdown-track"><div class="breakdown-fill" style="--w:29%"></div></div></div>
         </div>
       </div>
     </section>
 
-    <section class="section weight-section">
-      <div class="weight-card">
-        <span class="eyebrow light">TREND-BASED NUTRITION COACH</span>
-        <h2>React to the trend, not one noisy weigh-in.</h2>
-        <p>Level Up first waits for enough weigh-ins to build a useful trend. Scheduled phase check-ins then compare your 7-day moving-average change with your target weekly pace. If the difference is meaningful, the coach can recommend a calorie step instead of changing your target every time the scale moves.</p>
-        <div class="weight-metrics">
-          <div><small>WEIGHT TREND</small><strong>178.6 <span>lb</span></strong><em>7-day moving average</em></div>
-          <div><small>COACH STATUS</small><strong>ON TRACK</strong><em>trend vs target pace</em></div>
-          <div><small>COACH ACTION</small><strong>HOLD</strong><em>keep current calories</em></div>
-        </div>
-      </div>
-    </section>
+    <section class="section weight-section"><div class="weight-card"><span class="eyebrow light">TREND-BASED NUTRITION COACH</span><h2>React to the trend, not one noisy weigh-in.</h2><p>Level Up first waits for enough weigh-ins to build a useful trend. Scheduled phase check-ins then compare your 7-day moving-average change with your target weekly pace. If the difference is meaningful, the coach can recommend a calorie step instead of changing your target every time the scale moves.</p><div class="weight-metrics"><div><small>WEIGHT TREND</small><strong>178.6 <span>lb</span></strong><em>7-day moving average</em></div><div><small>COACH STATUS</small><strong>ON TRACK</strong><em>trend vs target pace</em></div><div><small>COACH ACTION</small><strong>HOLD</strong><em>keep current calories</em></div></div></div></section>
 
-    <section class="section process-section">
-      <div class="process-heading"><span class="eyebrow">THE SCIENCE-BASED COACHING LOOP</span><h2>Plan. Measure. Evaluate. Adjust.</h2></div>
-      <div class="process-grid">
-        <article><span>01</span><h3>Build the starting plan</h3><p>Use evidence-informed hypertrophy principles, Smart Builder, templates, or manual programming to create the starting point.</p></article>
-        <article><span>02</span><h3>Measure what really happened</h3><p>Level Up remembers the sets, reps and loads you actually completed — not just what was planned.</p></article>
-        <article><span>03</span><h3>Evaluate the response</h3><p>Your performance is compared with your programmed rep range, previous training and, for nutrition phases, your weight trend.</p></article>
-        <article><span>04</span><h3>Adjust when the signal is strong enough</h3><p>Push load when performance earns it, back off when the pattern says you should, or hold steady when no change is needed.</p></article>
-      </div>
-    </section>
+    <section class="section process-section"><div class="process-heading"><span class="eyebrow">THE SCIENCE-BASED COACHING LOOP</span><h2>Plan. Measure. Evaluate. Adjust.</h2></div><div class="process-grid"><article><span>01</span><h3>Build the starting plan</h3><p>Use evidence-informed hypertrophy principles, Smart Builder, templates, or manual programming to create the starting point.</p></article><article><span>02</span><h3>Measure what really happened</h3><p>Level Up remembers the sets, reps and loads you actually completed — not just what was planned.</p></article><article><span>03</span><h3>Evaluate the response</h3><p>Your performance is compared with your programmed rep range, previous training and, for nutrition phases, your weight trend.</p></article><article><span>04</span><h3>Adjust when the signal is strong enough</h3><p>Push load when performance earns it, back off when the pattern says you should, or hold steady when no change is needed.</p></article></div></section>
 
-    <section id="beta" class="beta-section">
-      <div class="beta-photo"></div>
-      <div class="beta-panel">
-        <span class="eyebrow light">FOUNDING BETA</span>
-        <h2>Science-based coaching without the spreadsheet.</h2>
-        <p>Level Up is currently free in beta. Build your program, log real workouts, and let evidence-informed rules turn your training data into practical guidance instead of another pile of numbers.</p>
-        <div class="hero-actions">
-          <a class="button button-white" href="https://jrgallop-code.github.io/forge-fitness/">Open Level Up <span>↗</span></a>
-          <span class="beta-note">No credit card · Browser-based beta</span>
-        </div>
-      </div>
-    </section>
+    <section id="beta" class="beta-section"><div class="beta-photo"></div><div class="beta-panel"><span class="eyebrow light">FOUNDING BETA</span><h2>Science-based coaching without the spreadsheet.</h2><p>Level Up is currently free in beta. Build your program, log real workouts, and let evidence-informed rules turn your training data into practical guidance instead of another pile of numbers.</p><div class="hero-actions"><a class="button button-white" href="https://jrgallop-code.github.io/forge-fitness/">Open Level Up <span>↗</span></a><span class="beta-note">No credit card · Browser-based beta</span></div></div></section>
 
-    <section id="faq" class="section faq-section">
-      <div class="faq-heading"><span class="eyebrow">FAQ</span><h2>What does “science-based” actually mean?</h2></div>
-      <div class="faq-list">
-        <details><summary>What makes Level Up science-based?</summary><p>Level Up’s training rules are designed around evidence-informed resistance-training principles such as progressive resistance, managing weekly training volume, using a range of effective loading approaches, and making changes from performance data rather than arbitrary schedules. The app itself has not been tested as a complete clinical intervention, so we use “science-based” to describe the principles behind the system rather than claiming the entire product has been clinically validated.</p></details>
-        <details><summary>Is Level Up a human or AI coach?</summary><p>No. Level Up is a training app with coaching-style decision rules built around the data you log. It does not pretend to replace a qualified human coach, and it does not make random changes. It surfaces recommendations when your performance or weight-trend data meets the conditions for an adjustment.</p></details>
-        <details><summary>How does workout progression guidance work?</summary><p>Level Up compares completed working sets with the rep range programmed for that exercise. When every completed working set reaches the top of the range, it can recommend a practical load increase. If most completed sets fall below the range, it can instead suggest a lighter load.</p></details>
-        <details><summary>Why track weekly muscle volume?</summary><p>Training volume is one of the resistance-training variables linked with hypertrophy outcomes in the literature. Level Up tracks weekly muscle-set distribution so you can see whether the program is actually allocating work where you intended.</p></details>
-        <details><summary>How does the nutrition coach adjust calories?</summary><p>During an active nutrition phase, Level Up waits for enough weigh-ins to establish a trend. Scheduled check-ins compare your actual 7-day moving-average change with your target weekly pace and can recommend a calorie adjustment when the difference is large enough.</p></details>
-        <details><summary>Is the beta free?</summary><p>Yes. The current founding beta is free to use in your browser and can be added to your home screen as a Progressive Web App.</p></details>
-      </div>
-    </section>
+    <section id="faq" class="section faq-section"><div class="faq-heading"><span class="eyebrow">FAQ</span><h2>What does “science-based” actually mean?</h2></div><div class="faq-list"><details><summary>What makes Level Up science-based?</summary><p>Level Up’s training rules are designed around evidence-informed resistance-training principles such as progressive resistance, managing weekly training volume, using a range of effective loading approaches, and making changes from performance data rather than arbitrary schedules. The app itself has not been tested as a complete clinical intervention, so we use “science-based” to describe the principles behind the system rather than claiming the entire product has been clinically validated.</p></details><details><summary>Is Level Up a human or AI coach?</summary><p>No. Level Up is a training app with coaching-style decision rules built around the data you log. It does not pretend to replace a qualified human coach, and it does not make random changes. It surfaces recommendations when your performance or weight-trend data meets the conditions for an adjustment.</p></details><details><summary>How does workout progression guidance work?</summary><p>Level Up compares completed working sets with the rep range programmed for that exercise. When every completed working set reaches the top of the range, it can recommend a practical load increase. If most completed sets fall below the range, it can instead suggest a lighter load.</p></details><details><summary>Why track weekly muscle volume?</summary><p>Training volume is one of the resistance-training variables linked with hypertrophy outcomes in the literature. Level Up tracks weekly muscle-set distribution so you can see whether the program is actually allocating work where you intended.</p></details><details><summary>How does the nutrition coach adjust calories?</summary><p>During an active nutrition phase, Level Up waits for enough weigh-ins to establish a trend. Scheduled check-ins compare your actual 7-day moving-average change with your target weekly pace and can recommend a calorie adjustment when the difference is large enough.</p></details><details><summary>Is the beta free?</summary><p>Yes. The current founding beta is free to use in your browser and can be added to your home screen as a Progressive Web App.</p></details></div></section>
 
-    <section class="final-cta">
-      <div><span class="eyebrow light">YOUR NEXT SESSION</span><h2>Stop guessing what to change next.</h2><p>Use evidence-informed hypertrophy principles, log the work, and let Level Up tell you when the next adjustment is actually worth making.</p></div>
-      <a class="button button-white" href="https://jrgallop-code.github.io/forge-fitness/">Try Level Up free <span>↗</span></a>
-    </section>
+    <section class="final-cta"><div><span class="eyebrow light">YOUR NEXT SESSION</span><h2>Train with purpose. Progress with proof.</h2><p>Use evidence-informed hypertrophy principles, log the work, and let Level Up tell you when the next adjustment is actually worth making.</p></div><a class="button button-white" href="https://jrgallop-code.github.io/forge-fitness/">Try Level Up free <span>↗</span></a></section>
   </main>
 
   <footer class="site-footer">
-    <div class="footer-top">
-      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i></span><span class="brand-copy"><strong>LEVEL UP</strong><small>HYPERTROPHY TRAINING</small></span></a>
-      <div class="footer-links"><a href="#features">Coaching</a><a href="#science">Science</a><a href="#system">How it works</a><a href="#faq">FAQ</a><a href="https://jrgallop-code.github.io/forge-fitness/">Open app</a></div>
-    </div>
-    <div class="footer-bottom">
-      <small>© <span data-year></span> Level Up. All rights reserved.</small>
-      <small class="photo-credit">Photography via Pexels: Pikx By Panther, Marcus Chan Media, Foad Shariyati.</small>
-    </div>
+    <div class="footer-top"><a class="brand" href="#top"><img class="brand-logo-image" src="assets/level-up-site-logo.svg" alt="Level Up logo"><span class="brand-copy"><strong>LEVEL UP</strong><small>HYPERTROPHY TRAINING</small></span></a><div class="footer-links"><a href="#features">Coaching</a><a href="#science">Science</a><a href="#system">How it works</a><a href="#faq">FAQ</a><a href="https://jrgallop-code.github.io/forge-fitness/">Open app</a></div></div>
+    <div class="footer-bottom"><small>© <span data-year></span> Level Up. All rights reserved.</small><small class="photo-credit">Photography via Pexels: Pikx By Panther, Marcus Chan Media, Foad Shariyati.</small></div>
   </footer>
 
-  <script src="script.js?v=science-coach-1"></script>
+  <script src="script.js?v=proof-volume-1"></script>
 </body>
 </html>
