@@ -10,34 +10,13 @@
   <meta property="og:type" content="website">
   <title>Level Up — Science-Based Hypertrophy Coaching</title>
   <link rel="preconnect" href="https://images.pexels.com">
-  <link rel="stylesheet" href="styles.css?v=proof-volume-1">
-  <style>
-    .brand-logo-image{width:48px;height:48px;object-fit:cover;border-radius:12px;flex:none;box-shadow:0 8px 24px rgba(0,0,0,.35)}
-    .site-footer .brand-logo-image{width:52px;height:52px}
-    .science-badge{display:inline-flex;align-items:center;gap:10px;margin-top:18px;padding:10px 12px;border:1px solid rgba(255,255,255,.22);background:rgba(0,0,0,.42);backdrop-filter:blur(8px)}
-    .science-badge b{font-size:9px;letter-spacing:.16em;color:#fff}.science-badge>span{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 14px rgba(85,220,136,.75)}.science-badge small{font-size:9px;color:#aaa9a7}
-    .science-section{width:min(var(--max),calc(100% - 48px));margin:0 auto;padding:128px 0 120px}.science-head{display:grid;grid-template-columns:1.05fr .7fr;gap:90px;align-items:end;margin-bottom:48px}.science-head h2{font-size:clamp(44px,5.7vw,76px);letter-spacing:-.058em;line-height:.94;margin:16px 0 0}.science-head p{margin:0;color:#a2a19e;font-size:15px;line-height:1.75}.science-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.science-card{position:relative;min-height:320px;padding:34px 30px 38px;border-right:1px solid var(--line);background:linear-gradient(145deg,#101011,#09090a)}.science-card:first-child{border-left:1px solid var(--line)}.science-card .science-num{font-size:10px;color:var(--red);font-weight:900;letter-spacing:.12em}.science-card h3{font-size:26px;line-height:1.05;letter-spacing:-.04em;margin:48px 0 14px}.science-card p{font-size:13px;line-height:1.7;color:#8d8c89;margin:0}.science-card strong{color:#e7e6e3}.science-source{display:flex;justify-content:space-between;gap:30px;align-items:center;margin-top:26px;padding:22px 24px;border:1px solid var(--line);background:#0c0c0d}.science-source-copy{display:grid;gap:5px}.science-source-copy strong{font-size:12px}.science-source-copy span{font-size:10px;color:#777673;line-height:1.5}.science-links{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:9px}.science-links a{font-size:9px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;border:1px solid rgba(255,255,255,.22);padding:10px 12px;color:#d6d5d2}.science-links a:hover{border-color:var(--red);color:#fff}.science-note{margin:17px 0 0;color:#666561;font-size:10px;line-height:1.55;max-width:900px}.science-word{color:var(--red)}
-    .evidence-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.12);margin-top:30px;border:1px solid var(--line)}.evidence-strip div{background:#0c0c0d;padding:18px 20px;display:grid;gap:5px}.evidence-strip strong{font-size:11px;text-transform:uppercase;letter-spacing:.06em}.evidence-strip span{font-size:9px;color:#777673;line-height:1.45}
-
-    /* Real Level Up muscle-volume presentation */
-    .analytics-real{min-height:620px;border:1px solid var(--line);border-radius:22px;background:#101014;padding:22px;display:grid;grid-template-columns:1.12fr .88fr;gap:18px;box-shadow:0 28px 70px rgba(0,0,0,.28)}
-    .real-volume-card,.real-breakdown-card{border:1px solid rgba(255,255,255,.10);border-radius:20px;background:#15151a;padding:22px;overflow:hidden}
-    .real-card-top{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:20px}.real-card-top span{display:block;color:#ff4d72;font-size:10px;font-weight:900;letter-spacing:.16em}.real-card-top h3{margin:7px 0 0;font-size:26px;letter-spacing:-.04em}.real-card-top small{color:#a6a5ad;font-size:10px;font-weight:800;white-space:nowrap}
-    .real-map-stage{position:relative;min-height:405px;border:1px solid rgba(255,255,255,.09);border-radius:18px;background:#101014;display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:end;padding:24px 14px 18px}
-    .real-figure{position:relative;height:335px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end}.real-figure img{height:295px;width:auto;max-width:100%;filter:grayscale(1) brightness(.92) contrast(1.05);opacity:.92;position:relative;z-index:1}.real-figure b{font-size:11px;color:#c9c8ce;margin-top:8px}.real-highlight{position:absolute;z-index:2;background:rgba(72,207,125,.60);mix-blend-mode:screen;filter:blur(1px);pointer-events:none}.real-figure.front .real-highlight.chest{width:82px;height:48px;border-radius:45%;top:74px;left:50%;transform:translateX(-50%)}.real-figure.front .real-highlight.shoulder-l{width:32px;height:32px;border-radius:50%;top:72px;left:23%}.real-figure.front .real-highlight.shoulder-r{width:32px;height:32px;border-radius:50%;top:72px;right:23%}.real-figure.back .real-highlight.back{width:86px;height:126px;border-radius:45% 45% 30% 30%;top:78px;left:50%;transform:translateX(-50%);opacity:.62}.real-figure.back .real-highlight.traps{width:35px;height:72px;border-radius:40%;top:42px;left:50%;transform:translateX(-50%);opacity:.58}
-    .volume-scale-row{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:10px;margin-top:15px;color:#a5a4aa;font-size:9px;font-weight:900;letter-spacing:.10em}.volume-scale-bar{height:8px;border-radius:99px;background:linear-gradient(90deg,#aeb8bd,#3d7557,#188a42,#48cf7d);border:1px solid rgba(255,255,255,.14)}
-    .real-breakdown-card{display:flex;flex-direction:column;justify-content:center}.breakdown-title{display:flex;align-items:end;justify-content:space-between;gap:10px;margin-bottom:28px}.breakdown-title h3{font-size:28px;margin:0;line-height:1.05;letter-spacing:-.04em}.breakdown-title small{font-size:10px;color:#9f9ea6;font-weight:800;text-align:right}.breakdown-row{margin-bottom:24px}.breakdown-label{display:flex;justify-content:space-between;gap:15px;align-items:center;margin-bottom:10px}.breakdown-label strong{font-size:19px}.breakdown-label span{color:#c1c0c7;font-size:17px;font-weight:800}.breakdown-track{height:11px;background:#2b2b31;border-radius:99px;overflow:hidden}.breakdown-fill{height:100%;background:#48cf7d;border-radius:99px;width:var(--w)}
-    .real-note{margin:17px 0 0;color:#77767d;font-size:10px;line-height:1.55;text-align:center}
-
-    @media(max-width:1000px){.analytics-real{grid-template-columns:1fr}.real-map-stage{min-height:430px}.real-breakdown-card{min-height:390px}}
-    @media(max-width:900px){.science-head{grid-template-columns:1fr;gap:24px}.science-grid{grid-template-columns:1fr}.science-card{min-height:0;border-left:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.science-card:last-child{border-bottom:0}.science-card h3{margin-top:28px}.science-source{align-items:flex-start;flex-direction:column}.science-links{justify-content:flex-start}.evidence-strip{grid-template-columns:1fr}}
-    @media(max-width:600px){.science-section{width:min(var(--max),calc(100% - 32px));padding:90px 0}.science-badge{align-items:flex-start;flex-wrap:wrap}.science-card{padding:27px 23px}.science-source{padding:20px}.brand-logo-image{width:42px;height:42px}.analytics-real{padding:10px;border-radius:17px}.real-volume-card,.real-breakdown-card{padding:16px}.real-map-stage{min-height:360px;padding:18px 6px 14px}.real-figure{height:290px}.real-figure img{height:250px}.real-figure.front .real-highlight.chest{width:66px;height:39px;top:70px}.real-figure.front .real-highlight.shoulder-l,.real-figure.front .real-highlight.shoulder-r{width:27px;height:27px;top:69px}.real-figure.back .real-highlight.back{width:70px;height:105px;top:75px}.real-figure.back .real-highlight.traps{height:60px;top:45px}.breakdown-title{align-items:flex-start;flex-direction:column}.breakdown-title small{text-align:left}}
-  </style>
+  <link rel="stylesheet" href="styles.css?v=exact-logo-map-1">
+  <link rel="stylesheet" href="site-overrides.css?v=exact-logo-map-1">
 </head>
 <body>
   <header class="site-header" data-header>
     <a class="brand" href="#top" aria-label="Level Up home">
-      <img class="brand-logo-image" src="assets/level-up-site-logo.svg" alt="Level Up logo">
+      <img class="brand-logo-image" src="assets/level-up-site-logo.svg?v=exact-user-logo-1" alt="Level Up logo">
       <span class="brand-copy"><strong>LEVEL UP</strong><small>HYPERTROPHY TRAINING</small></span>
     </a>
     <button class="menu-button" type="button" data-menu-button aria-expanded="false" aria-controls="site-nav">Menu</button>
@@ -116,10 +95,7 @@
 
     <section id="science" class="science-section">
       <div class="science-head">
-        <div>
-          <span class="eyebrow">THE SCIENCE BEHIND THE COACHING</span>
-          <h2>Evidence first.<br><span class="science-word">Adjustments second.</span></h2>
-        </div>
+        <div><span class="eyebrow">THE SCIENCE BEHIND THE COACHING</span><h2>Evidence first.<br><span class="science-word">Adjustments second.</span></h2></div>
         <p>Level Up is designed around principles supported by resistance-training research, then applies them conservatively to your own data. It does not assume there is one perfect rep range, one perfect split, or a reason to change something every week.</p>
       </div>
       <div class="science-grid">
@@ -161,14 +137,8 @@
         <div class="analytics-points"><div><strong>Volume</strong><span>Rolling 7-day muscle-set distribution across the body</span></div><div><strong>Primary</strong><span>Primary target muscles receive 1.0 set credit</span></div><div><strong>Secondary</strong><span>Supported secondary muscles receive 0.5 set credit</span></div></div>
       </div>
       <div class="analytics-real" aria-label="Level Up muscle volume example">
-        <div class="real-volume-card">
-          <div class="real-card-top"><div><span>MUSCLE VOLUME</span><h3>Your Last 7 Days</h3></div><small>1W VIEW</small></div>
-          <div class="real-map-stage">
-            <div class="real-figure front"><img src="https://jrgallop-code.github.io/forge-fitness/assets/recovery/front-view.svg" alt="Front muscle anatomy"><i class="real-highlight chest"></i><i class="real-highlight shoulder-l"></i><i class="real-highlight shoulder-r"></i><b>Front</b></div>
-            <div class="real-figure back"><img src="https://jrgallop-code.github.io/forge-fitness/assets/recovery/back-view.svg" alt="Back muscle anatomy"><i class="real-highlight back"></i><i class="real-highlight traps"></i><b>Back</b></div>
-          </div>
-          <div class="volume-scale-row"><span>LOWER</span><div class="volume-scale-bar"></div><span>HIGHER</span></div>
-          <p class="real-note">Green intensity increases continuously with completed set credits.</p>
+        <div class="exact-volume-card">
+          <img src="assets/muscle-volume-map-exact.svg?v=exact-map-1" alt="Level Up muscle volume map showing the exact front and back anatomy from the app">
         </div>
         <div class="real-breakdown-card">
           <div class="breakdown-title"><h3>Muscle<br>Breakdown</h3><small>1W · Primary 1.0 · Secondary 0.5</small></div>
@@ -192,10 +162,10 @@
   </main>
 
   <footer class="site-footer">
-    <div class="footer-top"><a class="brand" href="#top"><img class="brand-logo-image" src="assets/level-up-site-logo.svg" alt="Level Up logo"><span class="brand-copy"><strong>LEVEL UP</strong><small>HYPERTROPHY TRAINING</small></span></a><div class="footer-links"><a href="#features">Coaching</a><a href="#science">Science</a><a href="#system">How it works</a><a href="#faq">FAQ</a><a href="https://jrgallop-code.github.io/forge-fitness/">Open app</a></div></div>
+    <div class="footer-top"><a class="brand" href="#top"><img class="brand-logo-image" src="assets/level-up-site-logo.svg?v=exact-user-logo-1" alt="Level Up logo"><span class="brand-copy"><strong>LEVEL UP</strong><small>HYPERTROPHY TRAINING</small></span></a><div class="footer-links"><a href="#features">Coaching</a><a href="#science">Science</a><a href="#system">How it works</a><a href="#faq">FAQ</a><a href="https://jrgallop-code.github.io/forge-fitness/">Open app</a></div></div>
     <div class="footer-bottom"><small>© <span data-year></span> Level Up. All rights reserved.</small><small class="photo-credit">Photography via Pexels: Pikx By Panther, Marcus Chan Media, Foad Shariyati.</small></div>
   </footer>
 
-  <script src="script.js?v=proof-volume-1"></script>
+  <script src="script.js?v=exact-logo-map-1"></script>
 </body>
 </html>
