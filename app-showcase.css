@@ -1,0 +1,24 @@
+.app-showcase{position:relative;overflow:hidden;padding:110px 24px 118px;border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);background:radial-gradient(circle at 72% 48%,rgba(241,58,48,.12),transparent 34%),linear-gradient(180deg,#09090a 0%,#050506 100%)}
+.app-showcase:before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(120deg,transparent 0 58%,rgba(255,255,255,.018) 58% 58.2%,transparent 58.2% 100%)}
+.app-showcase-inner{position:relative;z-index:1;width:min(var(--max),100%);margin:0 auto;display:grid;grid-template-columns:minmax(0,.9fr) minmax(330px,.75fr);gap:clamp(48px,7vw,108px);align-items:center}
+.app-showcase-copy{max-width:640px}
+.app-showcase-copy h2{font-size:clamp(48px,6vw,80px);line-height:.95;letter-spacing:-.06em;margin:16px 0 24px}
+.app-showcase-copy h2 em{color:var(--red);font-style:normal}
+.app-showcase-copy p{max-width:590px;margin:0;color:#9a9996;font-size:15px;line-height:1.75}
+.app-showcase-stage{position:relative;display:flex;flex-direction:column;align-items:center;min-width:0}
+.app-showcase-glow{position:absolute;left:50%;top:43%;width:470px;height:470px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(241,58,48,.16),rgba(241,58,48,.04) 40%,transparent 70%);filter:blur(18px);pointer-events:none}
+.app-showcase-phone{position:relative;z-index:1;width:min(330px,82vw);padding:8px;border-radius:48px;background:linear-gradient(145deg,#37373c 0%,#111113 13%,#020203 86%,#303035 100%);box-shadow:0 34px 84px rgba(0,0,0,.68),0 0 0 1px rgba(255,255,255,.15),inset 0 0 0 1px rgba(255,255,255,.06),0 0 70px rgba(241,58,48,.08)}
+.app-showcase-camera{position:absolute;z-index:5;top:17px;left:50%;transform:translateX(-50%);width:31%;height:24px;border-radius:99px;background:#030303;box-shadow:inset 0 0 0 1px rgba(255,255,255,.04)}
+.app-showcase-camera span{position:absolute;right:11px;top:8px;width:7px;height:7px;border-radius:50%;background:#090b11;box-shadow:inset 0 0 0 2px #11172a}
+.app-showcase-screen{position:relative;width:100%;aspect-ratio:200/434;overflow:hidden;border-radius:41px;background:#111114;box-shadow:inset 0 0 0 1px rgba(255,255,255,.06);touch-action:pan-y}
+.app-showcase-image{position:absolute;inset:0;width:100%;height:100%;display:none;object-fit:contain;object-position:center;background:#111114}
+.app-showcase-image.is-active{display:block}
+.app-showcase-tabs{position:relative;z-index:2;width:min(520px,100%);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:26px}
+.app-showcase-tab{appearance:none;border:1px solid rgba(255,255,255,.12);border-radius:999px;background:#0b0b0d;color:#8f8e8b;padding:11px 13px;font:inherit;font-size:11px;font-weight:700;letter-spacing:.03em;cursor:pointer;white-space:nowrap}
+.app-showcase-tab:hover,.app-showcase-tab:focus-visible{border-color:rgba(255,255,255,.28);color:#fff;outline:none}
+.app-showcase-tab.is-active{border-color:rgba(241,58,48,.72);background:rgba(241,58,48,.11);color:#fff;box-shadow:0 0 0 1px rgba(241,58,48,.08) inset}
+.app-showcase-caption{position:relative;z-index:2;width:min(520px,100%);display:flex;justify-content:space-between;gap:14px;padding:13px 4px 0;color:#777673;font-size:9px;letter-spacing:.04em}
+.app-showcase-caption strong{color:#fff;letter-spacing:.12em}
+@media(max-width:900px){.app-showcase{padding:92px 20px 98px}.app-showcase-inner{grid-template-columns:1fr;gap:48px}.app-showcase-copy{max-width:720px}.app-showcase-stage{width:100%}}
+@media(max-width:600px){.app-showcase{padding:80px 12px 86px}.app-showcase-copy{padding:0 6px}.app-showcase-copy h2{font-size:clamp(44px,13vw,62px)}.app-showcase-copy p{font-size:14px}.app-showcase-phone{width:min(350px,88vw);padding:7px;border-radius:46px}.app-showcase-screen{border-radius:39px}.app-showcase-camera{top:16px;height:23px}.app-showcase-tabs{grid-template-columns:repeat(2,minmax(0,1fr));max-width:350px;margin-top:22px}.app-showcase-tab{font-size:11px;padding:11px 10px}.app-showcase-caption{max-width:350px;padding-inline:2px}.app-showcase-glow{width:390px;height:390px}}
+@media(max-width:360px){.app-showcase{padding-inline:8px}.app-showcase-phone{width:min(326px,92vw)}.app-showcase-caption{font-size:8px}}
