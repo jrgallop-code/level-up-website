@@ -6,6 +6,11 @@ on:
       - agent/static-real-app-showcase
     paths:
       - .github/workflows/extract-static-app-showcase.yml
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .github/workflows/extract-static-app-showcase.yml
 
 permissions:
   contents: write
@@ -60,6 +65,7 @@ jobs:
           PY
 
       - name: Commit extracted screenshots
+        if: github.event_name == 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
