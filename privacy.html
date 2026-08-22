@@ -31,7 +31,7 @@
       <aside class="privacy-summary" aria-label="Privacy summary">
         <span>AT A GLANCE</span>
         <strong>Your training data is stored on your device first.</strong>
-        <p>Cloud backup occurs only when you choose to upload it. Level Up does not sell your personal information or use it for targeted advertising.</p>
+        <p>When you are signed in, Level Up automatically maintains a private cloud backup using version checks designed to prevent an older device from overwriting a newer backup. Level Up does not sell your personal information or use it for targeted advertising.</p>
       </aside>
 
       <article class="privacy-content">
@@ -48,9 +48,9 @@
           <h3>Information you enter</h3>
           <p>Depending on the features you use, this may include profile and training preferences, age, sex, height, body weight, goals, training experience, exercise preferences or limitations, workout plans, completed workouts, exercise names, sets, repetitions, loads, RIR, cardio entries, body measurements, sleep and water entries, nutrition goals and targets, schedules, progress records and app settings.</p>
           <h3>Backup information</h3>
-          <p>When you select <strong>Upload This Device</strong>, Level Up creates a backup of registered app storage on that device and sends it to your private cloud-backup record. Cloud backup is manual; signing in by itself does not upload your training data.</p>
+          <p>When you are signed in, Level Up automatically creates and updates a backup of registered app storage on that device in your private cloud-backup record. You can also select <strong>Back Up Now</strong> to request an immediate backup. Before replacing a backup, Level Up compares versions; if the cloud contains a newer version, automatic upload pauses rather than overwriting it.</p>
           <h3>Technical and support information</h3>
-          <p>Our hosting and security providers may process standard request information such as IP address, browser type, device type, timestamps and security events. If you contact support, we receive the information you include in your message. The in-app support feature may add basic browser and device details, but it does not automatically attach your workout, nutrition, weight or backup contents.</p>
+          <p>Our hosting and security providers may process standard request information such as IP address, browser type, device type, timestamps and security events. For signed-in accounts, Level Up records a basic last-active timestamp so we can count recently active users and operate account services. If you contact support, we receive the information you include in your message. The in-app support feature may add basic browser and device details, but it does not automatically attach your workout, nutrition, weight or backup contents.</p>
         </section>
 
         <section>
@@ -59,7 +59,8 @@
           <ul>
             <li>authenticate your account and maintain your signed-in session;</li>
             <li>provide workout planning, logging, progress, recovery and nutrition features;</li>
-            <li>create, retrieve and restore backups that you request;</li>
+            <li>create, update, retrieve and restore your cloud backup;</li>
+            <li>measure basic signed-in account activity and service use;</li>
             <li>secure, maintain and troubleshoot the service;</li>
             <li>respond to support, access, correction and deletion requests; and</li>
             <li>comply with applicable law and protect users and the service.</li>
@@ -72,7 +73,7 @@
           <h3>Your device</h3>
           <p>Level Up is offline-first. Most app information is initially stored in browser storage on your phone, tablet or computer. Removing the installed app, clearing browser data or resetting the browser may delete local information that has not been exported or backed up.</p>
           <h3>Level Up cloud backup</h3>
-          <p>Account records, hashed session credentials and backups you manually upload are stored using Cloudflare services, including Cloudflare Workers and D1. Each backup is associated with your authenticated account.</p>
+          <p>Account records, hashed session credentials, last-active timestamps and cloud backups are stored using Cloudflare services, including Cloudflare Workers and D1. Each backup is associated with your authenticated account.</p>
           <h3>Optional Google Drive backup</h3>
           <p>If you separately connect Google Drive backup, Level Up requests permission to create and access its backup file in your Google Drive. That copy is governed by your Google account settings and Google's privacy terms.</p>
           <p>Cloudflare, Google and GitHub may process information in countries outside your province or country, including the United States. Information in another country may be subject to that country's laws.</p>
@@ -100,7 +101,8 @@
           <p>You may:</p>
           <ul>
             <li>export a portable JSON copy of your Level Up data;</li>
-            <li>choose whether to upload or download a cloud backup;</li>
+            <li>use <strong>Back Up Now</strong> or download a cloud backup when you need an immediate sync;</li>
+            <li>sign out on a device to stop signed-in activity updates and automatic Level Up cloud backups from that device;</li>
             <li>disconnect Google Drive backup;</li>
             <li>correct information in the app;</li>
             <li>request access to or correction of account information held by Level Up; and</li>
@@ -116,7 +118,7 @@
 
         <section>
           <h2>9. Browser storage and analytics</h2>
-          <p>Level Up uses browser storage necessary to remember your app data, preferences and signed-in session. Level Up does not currently use third-party advertising cookies or behavioural advertising. If broader analytics or advertising tools are introduced, this policy and any required consent choices will be updated before those tools are used.</p>
+          <p>Level Up uses browser storage necessary to remember your app data, preferences and signed-in session. For signed-in accounts, Level Up records a last-active timestamp to calculate basic counts such as users active within the past day or week. This does not create a detailed history of pages viewed, buttons pressed or workouts performed. Level Up does not currently use third-party advertising cookies or behavioural advertising. If broader analytics or advertising tools are introduced, this policy and any required consent choices will be updated before those tools are used.</p>
         </section>
 
         <section>
