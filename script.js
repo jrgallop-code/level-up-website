@@ -204,3 +204,78 @@ appSwipeArea?.addEventListener('touchend', event => {
 }, { passive: true });
 
 showAppScreen(activeAppScreen);
+
+const promoCarousel = document.querySelector('[data-promo-carousel]');
+
+if (promoCarousel) {
+  const promoViewport = promoCarousel.querySelector('[data-promo-viewport]');
+  const promoTrack = promoCarousel.querySelector('[data-promo-track]');
+  const promoSlides = Array.from(promoCarousel.querySelectorAll('[data-promo-slide]'));
+  const promoDots = promoCarousel.querySelector('[data-promo-dots]');
+  const promoCurrent = promoCarousel.querySelector('[data-promo-current]');
+  const promoPrev = promoCarousel.querySelector('[data-promo-prev]');
+  const promoNext = promoCarousel.querySelector('[data-promo-next]');
+  let activePromo = 0;
+  let promoTouchStartX = null;
+
+  promoSlides.forEach((slide, index) => {
+    const dot = document.createElement('button');
+    dot.className = 'promo-carousel-dot';
+    dot.type = 'button';
+    dot.setAttribute('role', 'tab');
+    dot.setAttribute('aria-label', `Show app feature ${index + 1} of ${promoSlides.length}`);
+    dot.addEventListener('click', () => showPromo(index));
+    promoDots?.append(dot);
+  });
+
+  const dots = Array.from(promoDots?.children || []);
+
+  function positionPromoSlides() {
+    const slide = promoSlides[activePromo];
+    if (!slide || !promoViewport || !promoTrack) return;
+    const center = slide.offsetLeft + (slide.offsetWidth / 2);
+    promoTrack.style.transform = `translate3d(${(promoViewport.clientWidth / 2) - center}px,0,0)`;
+  }
+
+  function showPromo(index) {
+    if (!promoSlides.length) return;
+    activePromo = (index + promoSlides.length) % promoSlides.length;
+    promoSlides.forEach((slide, slideIndex) => {
+      const active = slideIndex === activePromo;
+      slide.classList.toggle('is-active', active);
+      slide.setAttribute('aria-hidden', String(!active));
+    });
+    dots.forEach((dot, dotIndex) => {
+      const active = dotIndex === activePromo;
+      dot.classList.toggle('is-active', active);
+      dot.setAttribute('aria-selected', String(active));
+      dot.tabIndex = active ? 0 : -1;
+    });
+    if (promoCurrent) promoCurrent.textContent = String(activePromo + 1).padStart(2, '0');
+    requestAnimationFrame(positionPromoSlides);
+  }
+
+  promoPrev?.addEventListener('click', () => showPromo(activePromo - 1));
+  promoNext?.addEventListener('click', () => showPromo(activePromo + 1));
+  promoViewport?.addEventListener('keydown', event => {
+    if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+    event.preventDefault();
+    if (event.key === 'ArrowLeft') showPromo(activePromo - 1);
+    if (event.key === 'ArrowRight') showPromo(activePromo + 1);
+    if (event.key === 'Home') showPromo(0);
+    if (event.key === 'End') showPromo(promoSlides.length - 1);
+  });
+  promoViewport?.addEventListener('touchstart', event => {
+    promoTouchStartX = event.changedTouches[0]?.clientX ?? null;
+  }, { passive: true });
+  promoViewport?.addEventListener('touchend', event => {
+    if (promoTouchStartX === null) return;
+    const endX = event.changedTouches[0]?.clientX ?? promoTouchStartX;
+    const delta = endX - promoTouchStartX;
+    promoTouchStartX = null;
+    if (Math.abs(delta) >= 42) showPromo(activePromo + (delta < 0 ? 1 : -1));
+  }, { passive: true });
+
+  window.addEventListener('resize', () => requestAnimationFrame(positionPromoSlides));
+  showPromo(0);
+}
