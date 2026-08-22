@@ -1,5 +1,8 @@
 .brand-logo-image{width:48px;height:48px;object-fit:cover;border-radius:12px;flex:none;box-shadow:0 8px 24px rgba(0,0,0,.35)}
 .site-footer .brand-logo-image{width:52px;height:52px}
+.footer-links .footer-instagram{display:inline-flex;align-items:center;justify-content:center;color:#fff}
+.footer-instagram svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.footer-instagram .instagram-dot{fill:currentColor;stroke:none}
 .hero{align-items:start}
 .hero-inner{padding-top:112px;padding-bottom:64px;align-items:start}
 .hero-copy{padding-top:18px}
