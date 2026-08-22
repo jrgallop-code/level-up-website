@@ -1,4 +1,4 @@
-/* Website visual cleanup: remove phone presentations, simplify the muscle-volume visual, and size the new Level Up mark. */
+/* Website visual cleanup: simplify the old phone presentations and size the new Level Up mark. */
 .app-showcase{display:none!important}
 .hero-phone{display:none!important}
 .hero-inner{grid-template-columns:minmax(0,1fr)!important;gap:0!important}
@@ -10,3 +10,31 @@
 .site-footer .brand-logo-image{width:76px!important;height:58px!important}
 @media(max-width:760px){.hero-inner{grid-template-columns:minmax(0,1fr)!important}.brand-logo-image{width:64px!important;height:48px!important}}
 @media(max-width:600px){.brand-logo-image{width:58px!important;height:44px!important}.site-footer .brand-logo-image{width:66px!important;height:50px!important}}
+
+/* Real Level Up promotional carousel. */
+.promo-carousel{position:relative;overflow:hidden;padding:112px 0 120px;background:linear-gradient(180deg,#080809 0%,#0d0d0f 48%,#080809 100%);border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07)}
+.promo-carousel::before{content:"";position:absolute;inset:18% 18% 12%;background:radial-gradient(circle,rgba(238,23,33,.16),transparent 63%);filter:blur(25px);pointer-events:none}
+.promo-carousel-heading,.promo-carousel-footer{position:relative;width:min(var(--max),calc(100% - 48px));margin-inline:auto}
+.promo-carousel-heading{display:grid;grid-template-columns:1fr minmax(260px,400px);align-items:end;gap:56px;margin-bottom:48px}
+.promo-carousel-heading h2{margin:14px 0 0;font-size:clamp(44px,5.8vw,78px);line-height:.93;letter-spacing:-.055em}
+.promo-carousel-heading h2 em{color:var(--red);font-style:normal}
+.promo-carousel-heading p{margin:0 0 4px;color:#99989d;font-size:15px;line-height:1.7}
+.promo-carousel-shell{position:relative;display:grid;grid-template-columns:64px minmax(0,1fr) 64px;align-items:center;gap:18px;width:min(1500px,100%);margin:0 auto}
+.promo-carousel-viewport{overflow:hidden;outline:none;touch-action:pan-y;padding:18px 0}
+.promo-carousel-viewport:focus-visible{box-shadow:inset 0 0 0 2px var(--red)}
+.promo-carousel-track{display:flex;align-items:center;gap:24px;transition:transform .52s cubic-bezier(.22,.68,0,1);will-change:transform}
+.promo-carousel-slide{flex:0 0 min(520px,58vw);margin:0;border-radius:24px;overflow:hidden;background:#050505;opacity:.34;transform:scale(.9);transition:opacity .38s ease,transform .38s ease,box-shadow .38s ease;box-shadow:0 20px 55px rgba(0,0,0,.38)}
+.promo-carousel-slide.is-active{opacity:1;transform:scale(1);box-shadow:0 30px 90px rgba(0,0,0,.65),0 0 46px rgba(238,23,33,.18)}
+.promo-carousel-slide img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:contain}
+.promo-carousel-arrow{width:58px;height:58px;border-radius:50%;border:1px solid rgba(255,255,255,.17);background:rgba(16,16,18,.9);color:#fff;font-size:32px;line-height:1;cursor:pointer;z-index:2;transition:border-color .2s ease,background .2s ease,transform .2s ease}
+.promo-carousel-arrow:hover,.promo-carousel-arrow:focus-visible{border-color:var(--red);background:#1a1012;transform:scale(1.04);outline:none}
+.promo-carousel-footer{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:30px}
+.promo-carousel-dots{display:flex;align-items:center;gap:9px}
+.promo-carousel-dot{width:26px;height:4px;padding:0;border:0;border-radius:99px;background:#333338;cursor:pointer;transition:width .25s ease,background .25s ease}
+.promo-carousel-dot.is-active{width:48px;background:var(--red)}
+.promo-carousel-dot:focus-visible{outline:2px solid #fff;outline-offset:4px}
+.promo-carousel-footer p{display:flex;align-items:baseline;gap:7px;margin:0;color:#77767b;font-size:10px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+.promo-carousel-footer p strong{color:#fff;font-size:17px}.promo-carousel-footer p span{color:var(--red);font-size:12px;margin-right:7px}
+@media(max-width:900px){.promo-carousel-heading{grid-template-columns:1fr;gap:20px}.promo-carousel-heading p{max-width:560px}.promo-carousel-shell{grid-template-columns:52px minmax(0,1fr) 52px;gap:8px}.promo-carousel-arrow{width:48px;height:48px}.promo-carousel-slide{flex-basis:min(500px,72vw)}}
+@media(max-width:600px){.promo-carousel{padding:82px 0 88px}.promo-carousel-heading{width:calc(100% - 32px);margin-bottom:28px}.promo-carousel-heading h2{font-size:clamp(40px,12.5vw,58px)}.promo-carousel-shell{display:block}.promo-carousel-viewport{padding:12px 0}.promo-carousel-track{gap:14px}.promo-carousel-slide{flex-basis:calc(100vw - 48px);border-radius:18px}.promo-carousel-arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(10,10,11,.84);backdrop-filter:blur(10px)}.promo-carousel-arrow:hover,.promo-carousel-arrow:focus-visible{transform:translateY(-50%) scale(1.04)}.promo-carousel-arrow--prev{left:8px}.promo-carousel-arrow--next{right:8px}.promo-carousel-footer{width:calc(100% - 32px);margin-top:22px}.promo-carousel-dot{width:14px}.promo-carousel-dot.is-active{width:30px}.promo-carousel-footer p{font-size:0;gap:5px}.promo-carousel-footer p strong{font-size:15px}.promo-carousel-footer p span{font-size:11px;margin:0}}
+@media(prefers-reduced-motion:reduce){.promo-carousel-track,.promo-carousel-slide,.promo-carousel-dot{transition:none}}
