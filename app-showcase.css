@@ -8,7 +8,7 @@
 .analytics-real{grid-template-columns:1fr!important}
 .brand-logo-image{width:70px!important;height:54px!important;object-fit:contain!important;border-radius:0!important;box-shadow:none!important;background:transparent!important}
 .site-footer .brand-logo-image{width:76px!important;height:58px!important}
-@media(max-width:760px){html,body{max-width:100%;overflow-x:hidden}.hero{min-height:auto}.hero-inner{grid-template-columns:minmax(0,1fr)!important}.brand-logo-image{width:64px!important;height:48px!important}}
+@media(max-width:760px){html,body{max-width:100%;overflow-x:hidden}.hero{display:block!important;min-height:0!important;height:auto!important}.hero-inner{grid-template-columns:minmax(0,1fr)!important;min-height:0!important;padding-bottom:28px!important}.brand-logo-image{width:64px!important;height:48px!important}}
 @media(max-width:600px){.brand-logo-image{width:58px!important;height:44px!important}.site-footer .brand-logo-image{width:66px!important;height:50px!important}}
 
 /* Real Level Up promotional carousel. */
