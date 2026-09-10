@@ -53,3 +53,50 @@
 @media(max-width:760px){.hero-inner{padding-top:98px;padding-bottom:48px;align-items:start}.hero-copy{padding-top:0}.hero-phone{margin-top:18px}.feature-carousel{width:100%;padding-bottom:88px}.feature-carousel-viewport{padding:16px 0 20px}.feature-carousel-track{gap:14px}.feature-carousel-card{flex-basis:calc(100vw - 48px);min-height:440px;padding:42px 32px 38px;border-radius:25px}.feature-carousel-icon{width:88px;height:88px;margin-bottom:36px}.feature-carousel-controls{gap:24px}.feature-carousel-button{width:56px;height:56px}.feature-carousel-hint{margin-top:12px}}
 @media(max-width:600px){.science-section{width:min(var(--max),calc(100% - 32px));padding:90px 0}.science-badge{align-items:flex-start;flex-wrap:wrap}.science-card{padding:27px 23px}.science-source{padding:20px}.brand-logo-image{width:42px;height:42px}.analytics-real{padding:8px;border-radius:17px}.real-breakdown-card{padding:16px}.breakdown-title{align-items:flex-start;flex-direction:column}.breakdown-title small{text-align:left}.intro-section.feature-carousel-section{padding-bottom:12px}.feature-carousel-heading h2{font-size:clamp(40px,12vw,58px)}}
 @media(prefers-reduced-motion:reduce){.feature-carousel-track,.feature-carousel-card{transition:none}}
+
+
+/* Non-clickable App Store availability badge. */
+.app-store-coming-soon{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  min-height:49px;
+  padding:7px 14px 8px;
+  border:1px solid rgba(255,255,255,.42);
+  border-radius:10px;
+  background:rgba(8,8,9,.88);
+  color:#fff;
+  box-shadow:0 10px 28px rgba(0,0,0,.26);
+  user-select:none;
+  cursor:default;
+}
+.app-store-mark{
+  width:25px;
+  flex:none;
+  font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  font-size:30px;
+  line-height:1;
+  text-align:center;
+}
+.app-store-copy{
+  display:grid;
+  gap:1px;
+  line-height:1;
+}
+.app-store-copy small{
+  font-size:8px;
+  font-weight:800;
+  letter-spacing:.11em;
+  color:#c8c7c5;
+}
+.app-store-copy strong{
+  font-size:20px;
+  font-weight:650;
+  letter-spacing:-.025em;
+}
+@media(max-width:760px){
+  .app-store-coming-soon{
+    min-height:48px;
+    padding-inline:13px;
+  }
+}
