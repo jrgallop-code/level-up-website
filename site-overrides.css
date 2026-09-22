@@ -55,8 +55,8 @@
 @media(prefers-reduced-motion:reduce){.feature-carousel-track,.feature-carousel-card{transition:none}}
 
 
-/* Non-clickable App Store availability badge. */
-.app-store-coming-soon{
+/* Live App Store download badge. */
+.app-store-link{
   display:inline-flex;
   align-items:center;
   gap:10px;
@@ -67,8 +67,16 @@
   background:rgba(8,8,9,.88);
   color:#fff;
   box-shadow:0 10px 28px rgba(0,0,0,.26);
-  user-select:none;
-  cursor:default;
+  text-decoration:none;
+  transition:border-color .2s ease,background .2s ease,transform .2s ease,box-shadow .2s ease;
+}
+.app-store-link:hover,
+.app-store-link:focus-visible{
+  border-color:#fff;
+  background:#171719;
+  box-shadow:0 14px 34px rgba(0,0,0,.34);
+  transform:translateY(-1px);
+  outline:none;
 }
 .app-store-mark{
   width:25px;
@@ -95,7 +103,7 @@
   letter-spacing:-.025em;
 }
 @media(max-width:760px){
-  .app-store-coming-soon{
+  .app-store-link{
     min-height:48px;
     padding-inline:13px;
   }
