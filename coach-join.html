@@ -24,6 +24,7 @@
 </section></main><script>
 const API="https://api.leveluphypertrophy.com",CLIENT_ID="969450620287-gh455asc7c3lh67j7llq6f55rdpla0j3.apps.googleusercontent.com";
 const $=id=>document.getElementById(id);const token=new URLSearchParams(location.search).get("invite")||"";
+if(/^[0-9a-f]{64}$/i.test(token)){const cleaned=new URL(location.href);cleaned.searchParams.delete("invite");history.replaceState(history.state,"",cleaned.pathname+cleaned.search+cleaned.hash);}
 const SESSION_KEY="level_up_cloud_session",ACCOUNT_KEY="level_up_cloud_account";
 let appleWebConfig=null,appleState="",appleNonce="",invitePreview=null,signedInUser=null;
 if(/^[0-9a-f]{64}$/i.test(token))document.getElementById("existing-pwa-join").href="https://app.leveluphypertrophy.com/?invite="+encodeURIComponent(token);
